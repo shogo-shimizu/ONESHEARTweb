@@ -1,0 +1,59 @@
+.sidemenu {
+    width: 92%;
+    height: 100vh;
+    position: fixed;
+    transition: 1s;
+    z-index: 100;
+    &_food {
+        left: 0;
+        top: 0%;
+        background-color: #024906;
+        transform: translateX(-92%);
+        &_title {
+            height: 100%;
+            width: 8%;
+            position: absolute;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(180deg);
+            p {
+                letter-spacing: 10px;
+                color: #fafafa;
+                writing-mode: vertical-rl;
+                text-shadow: 1px 1px 3px black;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+    &_drink {
+        right: 0;
+        top: 0;
+        background-color: #800000;
+        transform: translateX(92%);
+        &_title {
+            height: 100%;
+            width: 8%;
+            position: absolute;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                letter-spacing: 10px;
+                color: #fafafa;
+                writing-mode: vertical-rl;
+                text-shadow: 1px 1px 3px black;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+.sideMenuOpen {
+    transform: none;
+}

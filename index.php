@@ -15,6 +15,7 @@ $the_query = new WP_Query($args);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="大胡にあるカフェダイニング、ランチ・ディナー">
     <script>
         (function(d) {
             var config = {
@@ -50,13 +51,13 @@ $the_query = new WP_Query($args);
     <link rel="stylesheet" href="./css/foodmenu.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/top.js"></script>
-    <title>ONES HEART</title>
+    <title>【公式】ONESHEART-cafe&dining-</title>
 </head>
 
 <body>
     <!-- fixed sidemenuここから -->
     <div id="SIDEMENU" class="sidemenu sidemenu_food">
-        <?php include('./pages/foodmenu.php'); ?>
+        <?php include('./inc/foodmenu.php'); ?>
         <div id="MenuTitle" class="MenuTitle sidemenu_food_title">
             <p>◀ FOOD ◀</p>
         </div>
@@ -81,7 +82,7 @@ $the_query = new WP_Query($args);
         </div>
         <div class="header_logo">
             <h1>CAFE & Dining BAR</h1>
-            <?php include('./pages/header_logo.php'); ?>
+            <?php include('./inc/header_logo.php'); ?>
             <p>Since 2015</p>
             <h3>Welcome to ONESHEART.</h3>
             <h3>We hope you take a good time</h3>
@@ -145,28 +146,26 @@ $the_query = new WP_Query($args);
         <div class="map">
             <h1>- Location -</h1>
             <div class="locationContainer">
-                <p>Cafe & Dining ONESHEART</p>
-                <p>371-0223</p>
-                <p>550-5,Ogo,Maebashi,Gunma</p>
-                <p>群馬県前橋市大胡町550-5</p>
                 <picture>
                     <source srcset="./assets/images/gaikan.webp" class="webp">
                     <img src="./assets/images/gaikan.JPG" class="gaikan">
                 </picture>
-            </div>
-            <div class="mapContainer">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d821.8569409796407!2d139.1586182905589!3d36.4091344010145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1643025902397!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p class="alignLeft">Cafe & Dining ONESHEART</p>
+                <p>〒371-0223</p>
+                <p>550-5,Ogo,Maebashi,Gunma</p>
+                <p>群馬県前橋市大胡町550-5</p>
+                <p>
+                    <a href="tel:050-1402-6358">TEL: 050-1402-6358</a>
+                </p>
             </div>
         </div>
-        <div class="contact">
+        <!-- <div class="contact">
             <h1>- Contact -</h1>
-        </div>
+        </div> -->
     </main>
     <!-- mainここまで -->
     <!-- footerここから -->
-    <footer>
-
-    </footer>
+    <?php include('./inc/footer.php') ?>
     <!-- footerここまで -->
 </body>
 

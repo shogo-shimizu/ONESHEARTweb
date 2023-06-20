@@ -4,13 +4,14 @@
   position: absolute;
   top: 10%;
   left: 2%;
-  text-align: center; }
-  .foodmenuContainer .foodmenuImage {
-    width: 100%;
-    height: 35%;
-    background-color: white; }
-    .foodmenuContainer .foodmenuImage img {
-      width: 100%;
-      height: 100%; }
-
-/*# sourceMappingURL=foodmenu.css.map */
+  text-align: center;
+}
+.foodmenuContainer .foodmenuImage {
+  width: 100%;
+  height: 35%;
+  background-color: white;
+}
+.foodmenuContainer .foodmenuImage img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=foodmenu.css.map */
