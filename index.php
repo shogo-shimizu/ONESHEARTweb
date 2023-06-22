@@ -46,6 +46,8 @@ $the_query = new WP_Query($args);
             s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+    <link rel="icon" type="image/png" href="./assets/images/ONESHEARTlogo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/ONESHEARTlogo.png">
     <link rel="stylesheet" href="https://use.typekit.net/pfu4vms.css">
     <link rel="stylesheet" href="./css/top.css">
     <link rel="stylesheet" href="./css/foodmenu.css">
