@@ -1,6 +1,6 @@
 <nav>
         <ul>
-            <li>HOME</li>
+            <!-- <li>ONES HEART</li> -->
             <!-- <li>CONCEPT</li>
             <li>NEWS</li>
             <li>CONTACT</li> -->

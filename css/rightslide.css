@@ -1,0 +1,30 @@
+.rightslideContainer {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  text-align: center;
+  overflow-y: scroll;
+}
+.rightslideContainer .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.rightslideContainer .gallery .img_container {
+  width: 35vw;
+  height: 35vw;
+  max-width: 300px;
+  max-height: 300px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px #333;
+}
+.rightslideContainer .gallery .img_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=rightslide.css.map */

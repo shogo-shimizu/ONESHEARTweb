@@ -51,6 +51,7 @@ $the_query = new WP_Query($args);
     <link rel="stylesheet" href="https://use.typekit.net/pfu4vms.css">
     <link rel="stylesheet" href="./css/top.css">
     <link rel="stylesheet" href="./css/foodmenu.css">
+    <link rel="stylesheet" href="./css/rightslide.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/top.js"></script>
     <title>【公式】ONESHEART-cafe&dining-</title>
@@ -61,12 +62,13 @@ $the_query = new WP_Query($args);
     <div id="SIDEMENU" class="sidemenu sidemenu_food">
         <?php include('./inc/foodmenu.php'); ?>
         <div id="MenuTitle" class="MenuTitle sidemenu_food_title">
-            <p>◀ FOOD ◀</p>
+            <p>◀ OPEN HOUR ◀</p>
         </div>
     </div>
     <div id="SIDEMENU" class="sidemenu sidemenu_drink">
+        <?php include('./inc/rightslide.php'); ?>
         <div id="MenuTitle" class="MenuTitle sidemenu_drink_title">
-            <p>◀ DRINK ◀</p>
+            <p>◀ GALLERY ◀</p>
         </div>
     </div>
     <!-- fixed sidemenuここまで -->
@@ -96,15 +98,21 @@ $the_query = new WP_Query($args);
     <!-- headerここまで -->
     <!-- mainここから -->
     <main>
-
+        <div class="notes">
+            <h3>ご利用にあたって</h3>
+            <p>少人数で営業しているお店ですので、料理のご提供には多少のお時間を頂いております。</p>
+            <p>お急ぎの方やお待ち頂くのが苦手な方はご遠慮下さいますようお願い致します。</p>
+            <p>また、ご利用中のお客様にごゆっくり過ごして頂くため、満席時にお待ち頂くことは出来ません。</p>
+            <p>ご理解とご協力をお願い致します。</p>
+        </div>
         <div id="CONCEPT" class="concept">
-            <div class="main_image">
+            <!-- <div class="main_image">
                 <div class="main_image_cover"></div>
-                <picture>
+                 <picture>
                     <source srcset="./assets/images/aqua.webp" class="webp">
                     <img src="./assets/images/aqua.JPG" class="aqua">
                 </picture>
-            </div>
+            </div> -->
             <h1>- Concept -</h1>
             <h2>食を楽しむ</h2>
             <h2>酒を愉しむ</h2>
@@ -134,6 +142,7 @@ $the_query = new WP_Query($args);
                                 <div>
                                     <p><?php the_time('Y年'); ?></p>
                                     <p><?php the_time('n月j日'); ?></p>
+                                    <p><?php the_author(); ?></p>
                                 </div>
                             </div>
                             <div class="item_content">
@@ -148,18 +157,17 @@ $the_query = new WP_Query($args);
         <div class="map">
             <h1>- Location -</h1>
             <div class="locationContainer">
-                <picture>
-                    <source srcset="./assets/images/gaikan.webp" class="webp">
-                    <img src="./assets/images/gaikan.JPG" class="gaikan">
-                </picture>
-                <p class="alignLeft">Cafe & Dining ONESHEART</p>
+                <img src="./assets/images/gaikan.png" class="gaikan">
+                <p class="alignCenter">Cafe & Dining ONESHEART</p>
                 <p>〒371-0223</p>
                 <p>550-5,Ogo,Maebashi,Gunma</p>
                 <p>群馬県前橋市大胡町550-5</p>
-                <p>
-                    <a href="tel:050-1402-6358">TEL: 050-1402-6358</a>
-                </p>
             </div>
+            <p class="tel_info">お問合せ・ご予約はこちらから</p>
+            <p class="tel">
+                <a href="tel:050-1402-6358">TEL 050-1402-6358</a>
+            </p>
+
         </div>
         <!-- <div class="contact">
             <h1>- Contact -</h1>

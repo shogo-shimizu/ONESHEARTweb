@@ -6,6 +6,6 @@
         
     </div>
     <div class="copy">
-        <small>&copy; ONESHEART 2015</small>
+        <small>&copy; ONESHEART since 2015</small>
     </div>
 </footer>

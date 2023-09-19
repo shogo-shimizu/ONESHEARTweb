@@ -188,6 +188,11 @@ header .header_logo h1 {
   animation-delay: 1s;
   margin-bottom: 20px;
 }
+@media (min-width:768px) {
+  header .header_logo h1 {
+    font-size: 48px;
+  }
+}
 @keyframes subTitle {
   0% {
     opacity: 0;
@@ -236,6 +241,11 @@ header .header_logo p {
   animation: message 2s forwards;
   animation-delay: 2;
 }
+@media (min-width:768px) {
+  header .header_logo p {
+    font-size: 32px;
+  }
+}
 header .header_logo h3 {
   font-family: bely, serif;
   font-weight: 700;
@@ -252,6 +262,12 @@ header .header_logo h3 {
   transform: translateX(100px);
   transition: 2s;
   animation: message 2s forwards;
+}
+@media (min-width:768px) {
+  header .header_logo h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 header .header_logo h3:nth-of-type(1) {
   animation-delay: 2.4s;
@@ -307,6 +323,21 @@ main .main_image img {
   z-index: 0;
 }
 
+.notes {
+  width: 80%;
+  margin: 0 auto;
+  font-family: fot-tsukuaoldmin-pr6n, sans-serif;
+  font-weight: 300;
+  margin-bottom: 150px;
+}
+.notes h3 {
+  text-align: center;
+}
+.notes p {
+  line-height: 1.2;
+  text-align: center;
+}
+
 .concept {
   width: 100%;
   margin: 0 auto;
@@ -319,15 +350,25 @@ main .main_image img {
 .concept h1 {
   font-family: fot-tsukuaoldmin-pr6n, sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 28px;
   font-style: normal;
   color: #333;
   margin-bottom: 80px;
+}
+@media (min-width:768px) {
+  .concept h1 {
+    font-size: 48px;
+  }
 }
 .concept h2 {
   font-family: fot-tsukuaoldmin-pr6n, sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+@media (min-width:768px) {
+  .concept h2 {
+    font-size: 28px;
+  }
 }
 .concept h2:last-of-type {
   margin-bottom: 80px;
@@ -338,6 +379,11 @@ main .main_image img {
   font-style: normal;
   font-size: 12px;
   margin-bottom: 50px;
+}
+@media (min-width:768px) {
+  .concept h3 {
+    font-size: 24px;
+  }
 }
 
 .news {
@@ -356,8 +402,13 @@ main .main_image img {
   font-weight: 300;
   font-style: normal;
   text-align: center;
-  font-size: 20px;
+  font-size: 28px;
   margin-bottom: 80px;
+}
+@media (min-width:768px) {
+  .news h1 {
+    font-size: 48px;
+  }
 }
 .news_list_item {
   width: 100%;
@@ -385,6 +436,12 @@ main .main_image img {
   padding-left: 10px;
   line-height: 14px;
 }
+@media (min-width:768px) {
+  .news_list_item .item_data p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
 .news_list_item .item_content {
   width: 75%;
   padding-right: 20px;
@@ -394,10 +451,22 @@ main .main_image img {
   font-weight: 700;
   text-align: left;
 }
+@media (min-width:768px) {
+  .news_list_item .item_content h3 {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+}
 .news_list_item .item_content p {
   font-size: 12px;
   font-weight: 300;
   line-height: 13px;
+}
+@media (min-width:768px) {
+  .news_list_item .item_content p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .map {
@@ -410,8 +479,13 @@ main .main_image img {
   font-weight: 300;
   font-style: normal;
   text-align: center;
-  font-size: 20px;
+  font-size: 28px;
   margin-bottom: 30px;
+}
+@media (min-width:768px) {
+  .map h1 {
+    font-size: 48px;
+  }
 }
 .map .locationContainer {
   width: 100%;
@@ -419,30 +493,64 @@ main .main_image img {
   margin: 0 auto;
   margin-bottom: 30px;
   position: relative;
+  text-align: center;
 }
 .map .locationContainer img {
-  width: 100%;
+  width: 80%;
   margin-bottom: 20px;
   margin-top: 30px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 20px black;
+}
+@media (min-width:768px) {
+  .map .locationContainer img {
+    width: 50%;
+  }
 }
 .map .locationContainer p {
   font-family: fot-tsukuaoldmin-pr6n;
   font-weight: 300;
-  font-style: italic;
   font-size: 14px;
   margin: 0;
   padding: 0;
   padding-left: 10%;
   padding-right: 10%;
-  line-height: 20px;
+  text-align: right;
 }
-.map .locationContainer p.alignLeft {
-  text-align: left;
+@media (min-width:768px) {
+  .map .locationContainer p {
+    font-size: 24px;
+  }
+}
+.map .locationContainer p.alignCenter {
+  text-align: center;
 }
 .map .locationContainer p:first-of-type {
   font-size: 18px;
   margin-bottom: 15px;
   line-height: 24px;
+}
+.map .tel_info {
+  margin-top: 100px;
+  font-size: 18px;
+  text-align: center;
+}
+.map .tel {
+  text-align: center;
+  font-size: 24px;
+}
+.map .tel a {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 15px;
+  color: #333;
+  background: linear-gradient(90deg, green 0%, green 30%, white 35%, white 65%, red 70%, red 100%);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #333;
+  text-decoration: none;
+}
+.map .tel a:hover {
+  box-shadow: 0.3px 0.3px 2px black;
 }
 .map .mapContainer {
   width: 100%;

@@ -5,13 +5,53 @@
   top: 10%;
   left: 2%;
   text-align: center;
+  overflow-y: scroll;
 }
-.foodmenuContainer .foodmenuImage {
-  width: 100%;
-  height: 35%;
-  background-color: white;
+.foodmenuContainer .openhour {
+  color: whitesmoke;
+  text-align: right;
+  padding-right: 50px;
+  font-family: fot-tsukuaoldmin-pr6n, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
-.foodmenuContainer .foodmenuImage img {
+@media (min-width:768px) {
+  .foodmenuContainer .openhour {
+    padding-right: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+.foodmenuContainer .openhour h3 {
+  font-size: 2em;
   width: 100%;
-  height: 100%;
+}
+@media (min-width:768px) {
+  .foodmenuContainer .openhour h3 {
+    font-size: 2.5em;
+  }
+}
+.foodmenuContainer .openhour div {
+  min-width: 10%;
+  padding-left: 10%;
+}
+.foodmenuContainer .openhour div h4 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+@media (min-width:768px) {
+  .foodmenuContainer .openhour div h4 {
+    font-size: 2em;
+  }
+}
+.foodmenuContainer .openhour div p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+@media (min-width:768px) {
+  .foodmenuContainer .openhour div p {
+    font-size: 1.5em;
+  }
 }/*# sourceMappingURL=foodmenu.css.map */
