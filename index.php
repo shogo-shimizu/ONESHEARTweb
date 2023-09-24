@@ -98,13 +98,13 @@ $the_query = new WP_Query($args);
     <!-- headerここまで -->
     <!-- mainここから -->
     <main>
-        <div class="notes">
+        <!-- <div class="notes">
             <h3>ご利用にあたって</h3>
             <p>少人数で営業しているお店ですので、料理のご提供には多少のお時間を頂いております。</p>
             <p>お急ぎの方やお待ち頂くのが苦手な方はご遠慮下さいますようお願い致します。</p>
             <p>また、ご利用中のお客様にごゆっくり過ごして頂くため、満席時にお待ち頂くことは出来ません。</p>
             <p>ご理解とご協力をお願い致します。</p>
-        </div>
+        </div> -->
         <div id="CONCEPT" class="concept">
             <!-- <div class="main_image">
                 <div class="main_image_cover"></div>

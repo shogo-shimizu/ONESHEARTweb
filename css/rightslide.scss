@@ -6,6 +6,10 @@
     right: 2%;
     text-align: center;
     overflow-y: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display:none;
+       }
     .gallery{
         display: flex;
         flex-wrap: wrap;

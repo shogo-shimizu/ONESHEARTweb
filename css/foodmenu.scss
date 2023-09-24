@@ -3,11 +3,16 @@
 .foodmenuContainer {
     width: 90%;
     height: 100%;
+    background-color: #024906;
     position: absolute;
     top: 10%;
     left: 2%;
     text-align: center;
     overflow-y: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display:none;
+       }
     .openhour{
         color: whitesmoke;
         text-align: right;

@@ -26,6 +26,19 @@
                 margin: 0;
                 padding: 0;
                 text-align: center;
+                transform: translateX(3px);
+                animation: leftMenuMove 2s ease-in-out infinite;
+                @keyframes leftMenuMove {
+                    0%{
+                        transform: translateX(3px);
+                    }
+                    50%{
+                        transform: translateX(-3px);
+                    }
+                    100%{
+                        transform: translateX(3px);
+                    }
+                }
             }
         }
     }
@@ -50,6 +63,19 @@
                 margin: 0;
                 padding: 0;
                 text-align: center;
+                transform: translateX(3px);
+                animation: rightMenuMove 2s ease-in-out infinite;
+                @keyframes rightMenuMove {
+                    0%{
+                        transform: translateX(3px);
+                    }
+                    50%{
+                        transform: translateX(-3px);
+                    }
+                    100%{
+                        transform: translateX(3px);
+                    }
+                }
             }
         }
     }
