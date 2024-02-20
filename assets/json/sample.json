@@ -1,0 +1,15 @@
+,
+    {
+        "id": 16,
+        "name": "ジンスリング",
+        "img": "longClear",
+        "alc": 13,
+        "sweet": 3,
+        "base": "ジン",
+        "ingredient": [
+            "シロップ",
+            "ソーダ"
+        ],
+        "price": 500,
+        "desc": ""
+    }

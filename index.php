@@ -15,7 +15,7 @@ $the_query = new WP_Query($args);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="大胡にあるカフェダイニング、ランチ・ディナー">
+    <meta name="description" content="前橋市大胡町のカフェ＆ダイニングバーです。お昼はお得なランチセットもございます！夜はお酒やおつまみはもちろん、パスタやピザなどお食事だけでもお楽しみ頂けます！">
     <script>
         (function(d) {
             var config = {
@@ -105,33 +105,68 @@ $the_query = new WP_Query($args);
             <p>また、ご利用中のお客様にごゆっくり過ごして頂くため、満席時にお待ち頂くことは出来ません。</p>
             <p>ご理解とご協力をお願い致します。</p>
         </div> -->
+        <div class="bunner">
+            <img src="./assets/images/bunner.png" alt="">
+        </div>
         <div id="CONCEPT" class="concept">
-            <!-- <div class="main_image">
-                <div class="main_image_cover"></div>
-                 <picture>
-                    <source srcset="./assets/images/aqua.webp" class="webp">
-                    <img src="./assets/images/aqua.JPG" class="aqua">
-                </picture>
-            </div> -->
-            <h1>- Concept -</h1>
+            <h1>ONESHEART</h1>
             <h2>食を楽しむ</h2>
             <h2>酒を愉しむ</h2>
             <h2>華やかな時を</h2>
             <h3>
-                私たちの仕事はお客様の<br>
-                『お腹』 と 『心』<br>
-                両方を満たすものでなければならない
-            </h3>
-            <h3>
                 お一人様でも、大人数でも<br>
-                お酒を飲む方も、お食事飲みの方も<br>
+                気取らずに気楽に楽しんで頂けるような<br>
+                リーズナブルなメニューになっております<br>
+                お酒を飲む方も、お食事のみの方も<br>
                 皆さんに楽しんで頂けるような<br>
                 そんなメニュー、お店作りを心がけています<br>
-                ご来店お待ちしています
+                ご来店を心よりお待ちしております！
             </h3>
         </div>
+        <div class="section">
+            <div class="section-container">
+                <div class="section-banner">
+                    <img src="./assets/images/liquer.png" alt="">
+                </div>
+                <div class="section-text">
+                    <h2>ドリンクは300種類以上！</h2>
+                    <h3>ビールや焼酎、ワインやウイスキーをはじめちょっと変わったカクテルや綺麗なカクテルなど盛りだくさん。</h3>
+                    <h3>お酒が飲めない方でも楽しめるようにノンアルコールのカクテルもございます！</h3>
+                </div>
+            </div>
+            <div class="section-container">
+                <div class="section-banner">
+                    <img src="./assets/images/party.jpg" alt="">
+                </div>
+                <div class="section-text">
+                    <h2>飲み放題付きの宴会もOK</h2>
+                    <h3>飲み放題が付いた宴会プランも４名様より承っております！</h3>
+                    <h3>詳しくはお気軽にお電話ください！</h3>
+                </div>
+            </div>
+            <div class="section-container">
+                <div class="section-banner">
+                    <img class="lunch" src="./assets/images/lunchset.png" alt="">
+                </div>
+                <div class="section-text">
+                    <h2>お得なランチセット</h2>
+                    <h3>平日限定のランチセットはメインにサラダとデザートと飲み物が付いて、¥1,100でお楽しみ頂けます</h3>
+                    <h3>メインはランチメニューからお好きなものをお選び頂けます！</h3>
+                </div>
+            </div>
+            <!-- <div class="section-container">
+                <div class="section-banner">
+                    <img src="./assets/images/liquer.png" alt="">
+                </div>
+                <div class="section-text">
+                    <h2>ドリンクは300種類以上！</h2>
+                    <h3>ビールや焼酎、ワインやウイスキーをはじめちょっと変わったカクテルや綺麗なカクテルなど盛りだくさん。</h3>
+                    <h3>お酒が飲めない方でも楽しめるようにノンアルコールのカクテルもございます！</h3>
+                </div>
+            </div> -->
+        </div>
         <div id="NEWS" class="news">
-            <h1>- Notification -</h1>
+            <h1>- お知らせ -</h1>
             <div class="news_list">
                 <?php
                 if ($the_query->have_posts()) : ?>
@@ -155,13 +190,16 @@ $the_query = new WP_Query($args);
             </div>
         </div>
         <div class="map">
-            <h1>- Location -</h1>
             <div class="locationContainer">
                 <img src="./assets/images/gaikan.png" class="gaikan">
                 <p class="alignCenter">Cafe & Dining ONESHEART</p>
                 <p>〒371-0223</p>
                 <p>550-5,Ogo,Maebashi,Gunma</p>
                 <p>群馬県前橋市大胡町550-5</p>
+                <p>月曜日定休</p>
+                <p>ランチタイム: 平日 11:00〜15:00</p>
+                <p>ディナータイム: 平日 18:00〜24:00</p>
+                <p>ディナータイム: 土日祝 17:00〜24:00</p>
             </div>
             <p class="tel_info">お問合せ・ご予約はこちらから</p>
             <p class="tel">

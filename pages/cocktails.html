@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/cocktails.css">
+  <title>Cocktails</title>
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'xni5wiv',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <script src="../js/cocktails.js" defer></script>
+</head>
+
+<body>
+  <main>
+  <button id="randomBtn">ここを<br>タップ</button>
+  <div class="card-container">
+    <img class="cover-card1 cover-card" src="../assets/images/cocktails/cover-card.jpg" alt="">
+    <img class="cover-card2 cover-card" src="../assets/images/cocktails/cover-card.jpg" alt="">
+    <img class="cover-card3 cover-card" src="../assets/images/cocktails/cover-card.jpg" alt="">
+    <div class="card">
+      <img class="bg" src="../assets/images/cocktails/card2.jpg" alt="">
+      <div class="card-contents-wrap">
+        <p id="name" class="card-contents">カクテル<br>ルーレット</p>
+        <div class="card-info">
+          <!-- <p class="card-contents card-title">ベースのお酒</p> -->
+          <p id="price" class="card-contents">¥???</p>
+          <p id="base" class="card-contents">Base. ???</p>
+          <!-- <p class="card-contents card-title">アルコール度数</p> -->
+          <p id="alc" class="card-contents">Alc. ???%</p>
+          <!-- <p class="card-contents card-title">甘さ５段階</p> -->
+          <p id="sweet" class="card-contents"></p>
+          <!-- <p class="card-contents card-title">材料</p> -->
+          <p id="ingredient" class="card-contents"></p>
+        </div>
+      </div>
+      <img id="cImage" class="card-contents-img" src="../assets/images/cocktails/random.png" alt="">
+    </div>
+  </div>
+  <div class="desc">
+    <p id="desc" class="card-contents">緑のボタンをタップしてランダムなカクテルを表示できます！</p>
+  </div>
+</main>
+</body>
+
+</html>
