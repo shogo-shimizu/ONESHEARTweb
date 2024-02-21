@@ -7,7 +7,33 @@ var alc = document.querySelector('#alc');
 var price = document.querySelector('#price'); 
 var desc = document.querySelector('#desc'); 
 var cImage = document.querySelector('#cImage'); 
+var bg = document.querySelector('.bg'); 
 
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+// 画像のプリロード
+// ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+  // 画像用配列
+var images = [
+    '../assets/images/cocktails/card-blue.png',
+    '../assets/images/cocktails/card-red.png',
+    '../assets/images/cocktails/card-gold.png',
+    '../assets/images/cocktails/card-rainbow.png',
+];
+
+window.onload = function(){
+    
+    // 画像プリロード
+    getImages();
+    
+}
+
+// 画像プリロード用関数
+function getImages(){
+  for (i = 0; i < images.length; i++){
+        var img = document.createElement('img');
+        img.src = images[i];
+    }
+}
 // ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
 // jsondata取得
 // ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
@@ -30,7 +56,15 @@ window.addEventListener('DOMContentLoaded',async function(){
 let randomButton = document.getElementById('randomBtn');
 
 function randomChoice(){
-    
+    // 時刻を取得
+    const now = new Date();
+    const after30m = now.getTime() +  (1000 * 60 * 30 * 1);
+    const A30 = new Date(after30m);
+    const nowYear = A30.getFullYear(); 
+    const nowMon = A30.getMonth() + 1;
+    const nowDate = A30.getDate();
+    const nowHour = A30.getHours();
+    const nowMinute = A30.getMinutes();
     // ランダムなカクテルを取り出す
     var cocktail = data[Math.floor(Math.random() * data.length)];
     console.log(cocktail);
@@ -40,27 +74,50 @@ function randomChoice(){
     ingr.innerHTML = cocktail.base+ "<br>" + cocktail.ingredient.join('<br>');
     alc.textContent = "Alc. " + cocktail.alc + "%";
     price.textContent = "¥"+cocktail.price;
-    desc.textContent = cocktail.desc;
+    desc.innerHTML = cocktail.desc + "<br><span>" +
+    `ご注文期限 :  ${nowYear}/${nowMon}/${nowDate} ${nowHour}:${nowMinute}`; + 
+     "</span>";
     cImage.src = '../assets/images/cocktails/' + cocktail.img + '.png';
     switch(cocktail.sweet){
         case 1:
-            sweet.textContent = "甘さ : ★☆☆☆☆";
+            sweet.textContent = "辛★☆☆☆☆甘";
             break;
         case 2:
-            sweet.textContent = "甘さ : ★★☆☆☆";
+            sweet.textContent = "辛☆★☆☆☆甘";
             break;
         case 3:
-            sweet.textContent = "甘さ : ★★★☆☆";
+            sweet.textContent = "辛☆☆★☆☆甘";
             break;
         case 4:
-            sweet.textContent = "甘さ : ★★★★☆";
+            sweet.textContent = "辛☆☆☆★☆甘";
             break;
         case 5:
-            sweet.textContent = "甘さ : ★★★★★";
+            sweet.textContent = "辛☆☆☆☆★甘";
             break;
         default:
-            sweet.textContent = "甘さ : ☆☆☆☆☆";
+            sweet.textContent = "辛☆☆☆☆☆甘";
     }
+    // 割引の抽選
+    var object = {
+        '../assets/images/cocktails/card-rainbow.png':1,
+        '../assets/images/cocktails/card-gold.png':50,
+        '../assets/images/cocktails/card-red.png':500,
+        '../assets/images/cocktails/card-blue.png':2000,
+        '../assets/images/cocktails/card2.jpg':7449
+    };
+      var number = Math.floor(Math.random() * 10000);
+      var weight = 0;
+      console.log(number);
+      for (var key in object) {
+        weight += object[key];
+        if (number < weight) {
+            value = key;
+            break;
+        }
+      }
+      console.log(value);
+      bg.src = value;
+
 };
 
 
